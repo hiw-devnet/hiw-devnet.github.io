@@ -30,3 +30,46 @@ header div a {
     font-size: 20px;
     font-weight: bold;
 }
+code, pre {
+    font-family: 'Fira Code', monospace;
+}
+main {
+    width: 75%;
+    margin: 32px auto;
+}
+main div {
+    margin-top: 32px;
+}
+code {
+    display: block;
+    padding: 16px;
+    width: 75%;
+    border: 1px solid #d3d3d3;
+    margin: auto;
+}
+button {
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+code div {
+    text-align: center;
+}
+code div p {
+    display: inline-block;
+    font-family: Zilla Slab, serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+h1 {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+p, main a {
+    font-family: Zilla Slab, serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+p a {
+    white-space: nowrap;
+    display: inline-block;
+}
