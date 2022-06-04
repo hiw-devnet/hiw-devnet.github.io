@@ -83,6 +83,7 @@ dt {
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
+    margin-top: 32px;
 }
 dd {
     font-family: Zilla Slab, serif;

@@ -20,7 +20,7 @@
             <p>HTML (HyperText Markup Language) は複数の文書を相互に関連付け、結び付ける<q>ハイパーテキスト</q>を記述するためのマークアップ言語の一つです。主にWebページを作成する際に使用され、CSS (Cascading Style Sheets) を使用してスタイルを設定したり、スクリプト (主に JavaScript) を利用することができます。</p>
             <p>以下のコードは最初からコードを記述する際のテンプレートで、更に下で解説を行います。</p>
             <div>
-                <code class="template">
+                <code class="template" id="tpl">
                     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;ja&quot;&gt;
@@ -40,7 +40,7 @@
 &lt;/html&gt;
 </pre>
                     <div>
-                        <p>CSSとJavaScriptをインラインに記述する場合のテンプレート</p>
+                        <p>CSS と JavaScript をインラインに記述する場合のテンプレート</p>
                         <button title="コピー"><img src="https://design.firefox.com/icons/icons/desktop/copy-16.svg" alt=""></button>
                     </div>
                 </code>
@@ -59,6 +59,23 @@
                 <dt><code>&lt;a&gt;</code></dt>
                 <dd>アンカータグです。<code>href=""</code>属性に URL (パス) を指定して他のWebページやファイル、メールアドレスへのリンクを作成できます。</dd>
                 <a class="sample" href="https://example.com/">サンプル</a>
+                <dt>テンプレートの利用</dt>
+                <dd>上記のテンプレートを利用するには環境を確認する必要があります。まず文字コードを設定します。HTMLを記述するのに特に要件はなく、デフォルトで搭載されているメモ帳でも作成できますが、文字コードを指定しないと環境によっては文字化けする場合があります。<br><br>これを設定するには<code>&lt;meta&gt;</code>タグの<code>charset=""</code>にコードを記述します。Windows メモ帳や Visual Studio Code, Atom などほとんどのテキストエディターではUTF-8が使用されているため編集する必要はありません。TeraPad などの古いテキストエディターでは Shif-JISが使用されていることもあり、その場合は文字コードの設定からUTF-8を指定しましょう。<br><br>また、CSS や JavaScript をインラインに記述するか、別のファイルとして読み込むかは状況によって異なります。例えば、ヘッダーやフッターなど複数のファイルでスタイルを流用する場合は別のファイルを読み込んだ方が良いでしょう。それ以外の場合はインラインへの記述で十分です。実際に外部ファイルを読み込むには下記のコードの<code>src=""</code>, <code>href=""</code>それぞれ当てはまる部分にファイルのパスを指定してください。</dd>
+                <div>
+                    <code class="template" id="load">
+                        <pre>
+&lt;!-- CSSスタイルシートの読み込み --&gt;
+&lt;link rel="stylesheet" href="https://example.com/stylesheet.css"&gt;
+&lt;!-- スクリプトの読み込み --&gt;
+&lt;script src="https://example.com/script.js"&gt;&lt;/script&gt;
+</pre>
+                        <div>
+                            <p>外部から CSS と JavaScript を読み込む際のサンプル</p>
+                            <button title="コピー"><img src="https://design.firefox.com/icons/icons/desktop/copy-16.svg" alt=""></button>
+                        </div>
+                    </code>
+                </div>
+                <dd>ここまでの手順が終了すれば自由にHTMLを記述できます。<a href="">CSS</a>, <a href="">JavaScript</a> はそれぞれ解説しています。</dd>
             </dl>
         </main>
     </body>
