@@ -4,6 +4,12 @@ body {
 header {
     padding: 16px 32px;
     box-shadow: rgba(0, 0, 0, .25) 0 2px 4px 0;
+    display: flexbox;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
 }
 header a {
     text-decoration: none;
@@ -30,17 +36,17 @@ header div a {
     font-size: 20px;
     font-weight: bold;
 }
-code, pre {
+.template, pre {
     font-family: 'Fira Code', monospace;
 }
 main {
     width: 75%;
-    margin: 32px auto;
+    margin: 128px auto 32px;
 }
 main div {
     margin-top: 32px;
 }
-code {
+.template {
     display: block;
     padding: 16px;
     width: 75%;
@@ -52,19 +58,19 @@ button {
     height: 32px;
     border: none;
 }
-code div {
+.template div {
     text-align: center;
 }
-code div p {
+.template div p {
     display: inline-block;
     font-family: Zilla Slab, serif;
     font-size: 16px;
     font-weight: normal;
 }
-h1 {
+h1:not(.sample) {
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
 }
-p, main a {
+p:not(.sample), main a:not(.sample) {
     font-family: Zilla Slab, serif;
     font-size: 24px;
     font-weight: 300;
@@ -72,4 +78,18 @@ p, main a {
 p a {
     white-space: nowrap;
     display: inline-block;
+}
+dt {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+dd {
+    font-family: Zilla Slab, serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+code {
+    font-family: 'Fira Code', monospace;
 }
