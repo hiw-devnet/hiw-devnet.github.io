@@ -10,11 +10,14 @@ header {
     left: 0;
     width: 100%;
     background-color: white;
+    height: 64px;
 }
 header a {
     text-decoration: none;
     color: black;
     display: inline-block;
+    height: 64px;
+    user-select: none;
 }
 h2 {
     margin: 0;
